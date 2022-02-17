@@ -1,6 +1,16 @@
 :root {
   --color-primary: #E4E458;
+  --color-primary-dark: #D3D322;
 
   --color-secondary: black;
   --color-secondary-hover: #202020;
+
+  --color-hover-light: #ffffff20;
+  --color-hover-dark: #00000010;
+}
+
+html,
+body,
+#svelte {
+  height: 100%;
 }
