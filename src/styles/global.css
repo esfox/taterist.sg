@@ -1,0 +1,11 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #E4E458;
+
+  --color-secondary: black;
+  --color-secondary-hover: #202020;
+}
