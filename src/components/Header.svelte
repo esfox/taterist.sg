@@ -2,7 +2,7 @@
   import InstagramLink from './InstagramLink.svelte';
 </script>
 
-<header class="h-20 bg-secondary text-white flex items-center px-4">
+<header class="w-full h-20 fixed bg-secondary text-white flex items-center px-4 z-50">
   <div class="flex-1 md:(hidden)">
     <button class="material-icons !text-4xl select-none p-2 hover:bg-hover-light"> menu </button>
   </div>

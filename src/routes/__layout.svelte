@@ -8,7 +8,7 @@
 
 <div class="grid grid-rows-[auto,1fr,auto] h-full">
   <Header />
-  <main>
+  <main class="mt-20">
     <slot />
   </main>
   <Footer />
