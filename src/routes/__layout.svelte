@@ -2,8 +2,8 @@
   import 'virtual:windi.css';
   import '../styles/global.css';
 
-  import Header from '../components/Header.svelte';
-  import Footer from '../components/Footer.svelte';
+  import Header from '../components/views/Header.svelte';
+  import Footer from '../components/views/Footer.svelte';
 </script>
 
 <div class="grid grid-rows-[auto,1fr,auto] h-full">

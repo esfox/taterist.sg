@@ -1,6 +1,6 @@
 <script>
-  import Button from './Button.svelte';
-  import LoopingVideo from './LoopingVideo.svelte';
+  import Button from '../Button.svelte';
+  import LoopingVideo from '../LoopingVideo.svelte';
 
   export let menu;
 

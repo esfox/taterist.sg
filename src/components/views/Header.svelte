@@ -1,8 +1,8 @@
 <script>
   import classNames from 'classnames';
 
-  import InstagramLink from './InstagramLink.svelte';
-  import DropdownMenu from './DropdownMenu.svelte';
+  import InstagramLink from '../InstagramLink.svelte';
+  import DropdownMenu from '../DropdownMenu.svelte';
 
   const navItems = [
     {

@@ -17,9 +17,9 @@
 </script>
 
 <script>
-  import Hero from '../components/Hero.svelte';
-  import Menu from '../components/Menu.svelte';
-  import About from '../components/About.svelte';
+  import Hero from '../components/views/Hero.svelte';
+  import Menu from '../components/views/Menu.svelte';
+  import About from '../components/views/About.svelte';
 
   export let menu;
   export let baseUrl;

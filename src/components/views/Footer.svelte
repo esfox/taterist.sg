@@ -1,5 +1,5 @@
 <script>
-  import InstagramLink from './InstagramLink.svelte';
+  import InstagramLink from '../InstagramLink.svelte';
 
   const currentYear = new Date().getFullYear();
 
