@@ -10,7 +10,7 @@
       label: 'MENU',
     },
     {
-      link: '#',
+      link: '#about',
       label: 'ABOUT',
     },
     {
