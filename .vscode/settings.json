@@ -1,0 +1,7 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.svelte-kit": true,
+    "pnpm-lock.yaml": true
+  }
+}
