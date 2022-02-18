@@ -21,12 +21,12 @@
             <img
               src={`/images/food/${mediaUrl}`}
               alt="menu item"
-              class={`md:(w-[var(--media-size)] h-[var(--media-size)]) object-cover`}
+              class={`sm:(w-[var(--media-size)] h-[var(--media-size)]) object-cover`}
             />
           {:else if mediaType === 'video'}
             <LoopingVideo
               src={`/images/food/${mediaUrl}`}
-              class={`md:(w-[var(--media-size)] h-[var(--media-size)])`}
+              class={`sm:(w-[var(--media-size)] h-[var(--media-size)])`}
             />
           {/if}
           <Button class="absolute right-0 bottom-0 m-3" on:click={order}>ORDER</Button>

@@ -3,6 +3,9 @@ import { defineConfig } from 'windicss/helpers';
 export default defineConfig({
   theme: {
     extend: {
+      screens: {
+        sm: '500px'
+      },
       colors: {
         primary: {
           DEFAULT: 'var(--color-primary)',
