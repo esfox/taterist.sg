@@ -2,18 +2,32 @@
   import InstagramLink from './InstagramLink.svelte';
 
   const currentYear = new Date().getFullYear();
+
+  const navItems = [
+    {
+      link: '#menu',
+      label: 'MENU',
+    },
+    {
+      link: '#',
+      label: 'FAQ',
+    },
+  ];
 </script>
 
+<!-- Anchor for #contact -->
+<div id="contact" class="relative top-[-5rem]" />
 <footer class="bg-primary">
   <div class="md:(flex items-center border-b border-primary-dark px-8 py-6)">
     <h2 class="flex-1 <md:(flex justify-center border-b border-primary-dark px-8 py-6)">
       TATERIST
     </h2>
     <ul class="flex-1 flex justify-center <md:(py-4)">
-      <a href="#menu">
-        <li class="hover:bg-hover-dark p-3" role="button">MENU</li>
-      </a>
-      <li class="hover:bg-hover-dark p-3" role="button">FAQ</li>
+      {#each navItems as { link, label }}
+        <a href={link}>
+          <li class="hover:bg-hover-dark p-3" role="button">{label}</li>
+        </a>
+      {/each}
     </ul>
     <div class="flex-1 text-right <md:(text-center py-4)">
       <h4>CONTACT</h4>

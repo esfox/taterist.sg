@@ -20,7 +20,9 @@
   }
 </script>
 
-<h2 id="menu" class="text-center py-6">MENU</h2>
+<!-- Anchor for #menu -->
+<div id="menu" class="relative top-[-5rem]" />
+<h2 class="text-center py-6">MENU</h2>
 {#if menu}
   <section class="max-w-screen-xl flex flex-wrap justify-center gap-10 px-8 md:px-12 pb-24 mx-auto">
     {#each menu as { mediaUrl, mediaType }}
