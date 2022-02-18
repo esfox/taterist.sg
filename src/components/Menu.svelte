@@ -1,6 +1,6 @@
 <script>
   import Button from './Button.svelte';
-  import { onMount } from 'svelte';
+  import LoopingVideo from './LoopingVideo.svelte';
 
   export let menu;
 
@@ -24,14 +24,10 @@
               class={`md:(w-[var(--media-size)] h-[var(--media-size)]) object-cover`}
             />
           {:else if mediaType === 'video'}
-            <video
+            <LoopingVideo
               src={`/images/food/${mediaUrl}`}
               class={`md:(w-[var(--media-size)] h-[var(--media-size)])`}
-              autoplay
-              loop
-            >
-              <track kind="captions" />
-            </video>
+            />
           {/if}
           <Button class="absolute right-0 bottom-0 m-3" on:click={order}>ORDER</Button>
         </div>
