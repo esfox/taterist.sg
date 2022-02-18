@@ -8,4 +8,4 @@
 </svelte:head>
 
 <Hero />
-<Menu />
+<Menu class="pt-6 pb-8" />

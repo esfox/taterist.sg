@@ -22,32 +22,31 @@
 
 <!-- Anchor for #menu -->
 <div id="menu" class="relative top-[-5rem]" />
-<h2 class="text-center py-6">MENU</h2>
-{#if menu}
-  <section class="max-w-screen-xl flex flex-wrap justify-center gap-10 px-8 md:px-12 pb-24 mx-auto">
-    {#each menu as { mediaUrl, mediaType }}
-      {#if mediaType === 'image'}
+<section class={$$props.class}>
+  <h2 class="text-center">MENU</h2>
+  {#if menu}
+    <div class="max-w-screen-xl flex flex-wrap justify-center gap-10 px-8 md:px-12 pt-6 mx-auto">
+      {#each menu as { mediaUrl, mediaType }}
         <div class="relative">
-          <img
-            src={`/images/food/${mediaUrl}`}
-            alt="menu item"
-            class={`md:(w-[${imageSize}] h-[${imageSize}]) object-cover`}
-          />
+          {#if mediaType === 'image'}
+            <img
+              src={`/images/food/${mediaUrl}`}
+              alt="menu item"
+              class={`md:(w-[${imageSize}] h-[${imageSize}]) object-cover`}
+            />
+          {:else if mediaType === 'video'}
+            <video
+              src={`/images/food/${mediaUrl}`}
+              class={`md:(w-[${imageSize}] h-[${imageSize}])`}
+              autoplay
+              loop
+            >
+              <track kind="captions" />
+            </video>
+          {/if}
           <Button class="absolute right-0 bottom-0 m-3" on:click={order}>ORDER</Button>
         </div>
-      {:else if mediaType === 'video'}
-        <div class="relative">
-          <video
-            src={`/images/food/${mediaUrl}`}
-            class={`md:(w-[${imageSize}] h-[${imageSize}])`}
-            autoplay
-            loop
-          >
-            <track kind="captions" />
-          </video>
-          <Button class="absolute right-0 bottom-0 m-3" on:click={order}>ORDER</Button>
-        </div>
-      {/if}
-    {/each}
-  </section>
-{/if}
+      {/each}
+    </div>
+  {/if}
+</section>
