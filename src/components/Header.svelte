@@ -1,5 +1,8 @@
 <script>
+  import classNames from 'classnames';
+
   import InstagramLink from './InstagramLink.svelte';
+  import DropdownMenu from './DropdownMenu.svelte';
 
   const navItems = [
     {
@@ -21,13 +24,29 @@
   ];
 </script>
 
-<header class="w-full h-20 fixed bg-secondary text-white flex items-center  px-4 z-50">
+<header class="w-full h-20 fixed bg-secondary text-white flex items-center px-4 z-50">
   <nav class="flex-1">
-    <button
-      class="material-icons flex-1 md:(hidden) !text-4xl select-none p-2 hover:bg-hover-light"
-    >
-      menu
-    </button>
+    <DropdownMenu>
+      <button
+        slot="toggle"
+        let:onClick
+        let:toggleClass
+        class={classNames(
+          'material-icons menu-toggle md:(hidden) !text-4xl select-none p-2 hover:bg-hover-light',
+          toggleClass
+        )}
+        on:click={onClick}
+      >
+        menu
+      </button>
+      <ul class="bg-white text-secondary">
+        {#each navItems as { link, label }}
+          <a href={link}>
+            <li class="hover:bg-hover-dark p-3" role="button">{label}</li>
+          </a>
+        {/each}
+      </ul>
+    </DropdownMenu>
     <ul class="flex <md:(hidden)">
       {#each navItems as { link, label }}
         <a href={link}>
