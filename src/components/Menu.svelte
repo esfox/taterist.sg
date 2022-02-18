@@ -1,18 +1,8 @@
 <script>
+  import Button from './Button.svelte';
   import { onMount } from 'svelte';
 
-  import Button from '../components/Button.svelte';
-
-  let menu;
-
-  onMount(async () => {
-    try {
-      const response = await fetch('menu.json');
-      menu = await response.json();
-    } catch (error) {
-      console.error(error);
-    }
-  });
+  export let menu;
 
   function order() {
     alert('Work in progress');
