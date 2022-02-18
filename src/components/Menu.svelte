@@ -4,7 +4,6 @@
   import Button from '../components/Button.svelte';
 
   let menu;
-  let imageSize = '360px';
 
   onMount(async () => {
     try {
@@ -27,17 +26,17 @@
   {#if menu}
     <div class="max-w-screen-xl flex flex-wrap justify-center gap-10 px-8 md:px-12 pt-6 mx-auto">
       {#each menu as { mediaUrl, mediaType }}
-        <div class="relative">
+        <div class="relative" style="--media-size: 360px">
           {#if mediaType === 'image'}
             <img
               src={`/images/food/${mediaUrl}`}
               alt="menu item"
-              class={`md:(w-[${imageSize}] h-[${imageSize}]) object-cover`}
+              class={`md:(w-[var(--media-size)] h-[var(--media-size)]) object-cover`}
             />
           {:else if mediaType === 'video'}
             <video
               src={`/images/food/${mediaUrl}`}
-              class={`md:(w-[${imageSize}] h-[${imageSize}])`}
+              class={`md:(w-[var(--media-size)] h-[var(--media-size)])`}
               autoplay
               loop
             >
