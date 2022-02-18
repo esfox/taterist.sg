@@ -6,27 +6,29 @@
   <div class="flex-1 md:(hidden)">
     <button class="material-icons !text-4xl select-none p-2 hover:bg-hover-light"> menu </button>
   </div>
-  <ul class="flex-1 flex <md:(hidden)">
-    <a href="/" rel="noreferrer noopener">
-      <li class="hover:bg-hover-light p-3" role="button">MENU</li>
-    </a>
-    <a href="/" rel="noreferrer noopener">
-      <li class="hover:bg-hover-light p-3" role="button">ABOUT</li>
-    </a>
-    <a href="/" rel="noreferrer noopener">
-      <li class="hover:bg-hover-light p-3" role="button">FAQ</li>
-    </a>
-    <a href="/" rel="noreferrer noopener">
-      <li class="hover:bg-hover-light p-3" role="button">CONTACT</li>
-    </a>
-  </ul>
-  <h1 class="flex-grow grid place-items-center text-3xl text-primary font-bold">TATERIST</h1>
+  <nav>
+    <ul class="flex-1 flex <md:(hidden)">
+      <a href="/" rel="noreferrer noopener">
+        <li class="hover:bg-hover-light p-3" role="button">MENU</li>
+      </a>
+      <a href="/" rel="noreferrer noopener">
+        <li class="hover:bg-hover-light p-3" role="button">ABOUT</li>
+      </a>
+      <a href="/" rel="noreferrer noopener">
+        <li class="hover:bg-hover-light p-3" role="button">FAQ</li>
+      </a>
+      <a href="/" rel="noreferrer noopener">
+        <li class="hover:bg-hover-light p-3" role="button">CONTACT</li>
+      </a>
+    </ul>
+  </nav>
+  <h2 class="flex-grow grid place-items-center text-primary">TATERIST</h2>
   <div class="flex-1 flex justify-end">
     <InstagramLink>
       <button
         class="material-icons !grid place-items-center!text-4xl select-none p-2 hover:bg-hover-light"
       >
-        <img src="/images/instagram-logo-white.svg" alt="instagram-logo" width="32" height="32" />
+        <img src="/images/instagram-logo-white.svg" alt="instagram-logo" class="w-8 h-8" />
       </button>
     </InstagramLink>
   </div>

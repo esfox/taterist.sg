@@ -3,7 +3,7 @@
   --color-primary-dark: #D3D322;
 
   --color-secondary: black;
-  --color-secondary-hover: #202020;
+  --color-secondary-hover: #141414;
 
   --color-hover-light: #ffffff20;
   --color-hover-dark: #00000010;
@@ -13,4 +13,16 @@ html,
 body,
 #svelte {
   height: 100%;
+}
+
+h1 {
+  @apply text-4xl font-black;
+}
+
+h2 {
+  @apply text-3xl font-bold;
+}
+
+h4 {
+  @apply text-xl font-semibold;
 }
