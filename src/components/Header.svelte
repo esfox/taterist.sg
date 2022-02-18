@@ -8,7 +8,7 @@
   </div>
   <nav>
     <ul class="flex-1 flex <md:(hidden)">
-      <a href="/" rel="noreferrer noopener">
+      <a href="#menu">
         <li class="hover:bg-hover-light p-3" role="button">MENU</li>
       </a>
       <a href="/" rel="noreferrer noopener">
