@@ -1,4 +1,5 @@
 <script>
+  import Hero from '../components/Hero.svelte';
   import Menu from '../components/Menu.svelte';
 </script>
 
@@ -6,4 +7,5 @@
   <title>taterist.sg</title>
 </svelte:head>
 
+<Hero />
 <Menu />
