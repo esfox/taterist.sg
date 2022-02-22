@@ -1,15 +1,23 @@
 <script>
-  import CenteredSection from '../CenteredSection.svelte';
+  import Button from '../Button.svelte';
+
+  const scrollToMenu = () => document.getElementById('menu').scrollIntoView();
 </script>
 
-<CenteredSection class="hero h-[240px] md:h-[348px] text-white">
-  <span slot="heading">GET BAKED.</span>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius est vitae efficitur eleifend.
-  Nam tincidunt consectetur luctus.
-</CenteredSection>
+<section
+  class="hero text-white flex flex-col justify-end items-start <md:(px-8 py-16) md:p-16 2xl:(px-32 py-24)"
+>
+  <h1 class="text-6xl md:text-8xl 2xl:text-9xl">GET BAKED.</h1>
+  <p class="max-w-[500px] text-md md:text-lg mt-2">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius est vitae efficitur
+    eleifend. Nam tincidunt consectetur luctus.
+  </p>
+  <Button class="px-12 mt-6" on:click={scrollToMenu}>SEE MENU</Button>
+</section>
 
 <style>
-  :global(.hero) {
+  .hero {
+    height: calc(100vh - var(--header-height));
     background: linear-gradient(var(--color-bg-overlay-dark), var(--color-bg-overlay-dark)),
       url('/images/hero-bg.jpg');
     background-position: center;

@@ -10,6 +10,8 @@
   --color-hover-dark: #00000010;
 
   --color-bg-overlay-dark: #00000080;
+
+  --header-height: 5rem;
 }
 
 html,
