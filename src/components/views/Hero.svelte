@@ -5,7 +5,7 @@
 </script>
 
 <section
-  class="hero text-white flex flex-col justify-end items-start <md:(px-8 py-16) md:p-16 2xl:(px-32 py-24)"
+  class="hero text-white flex flex-col justify-end items-start <md:(px-8 py-16) md:p-16 xl:(px-32 py-24)"
 >
   <h1 class="text-6xl md:text-8xl 2xl:text-9xl">GET BAKED.</h1>
   <p class="max-w-[500px] text-md md:text-lg mt-2">
