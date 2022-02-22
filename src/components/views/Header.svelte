@@ -25,7 +25,19 @@
 </script>
 
 <header
-  class="w-full h-[var(--header-height)] fixed bg-secondary text-white flex items-center px-4 z-50"
+  class="
+    w-full
+    h-[var(--header-height)]
+    fixed
+    bg-secondary
+    text-white
+    flex
+    items-center
+    px-8
+    md:px-16
+    xl:px-32
+    z-50
+  "
 >
   <nav class="flex-1">
     <DropdownMenu>

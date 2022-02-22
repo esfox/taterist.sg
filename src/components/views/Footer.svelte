@@ -18,7 +18,7 @@
 <!-- Anchor for #contact -->
 <div id="contact" class="relative top-[-5rem]" />
 <footer class="bg-primary">
-  <div class="md:(flex items-center border-b border-primary-dark px-8 py-6)">
+  <div class="md:(flex items-center border-b border-primary-dark px-8 md:px-16 xl:px-32 py-6)">
     <h2 class="flex-1 <md:(flex justify-center border-b border-primary-dark px-8 py-6)">
       TATERIST
     </h2>
