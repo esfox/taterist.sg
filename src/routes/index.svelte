@@ -43,5 +43,5 @@
 </svelte:head>
 
 <Hero />
-<Menu class="pt-6 pb-12" {menu} />
+<Menu class="pt-8 pb-18" {menu} />
 <About />

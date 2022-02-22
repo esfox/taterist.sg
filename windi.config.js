@@ -14,6 +14,7 @@ export default defineConfig({
         secondary: {
           DEFAULT: 'var(--color-secondary)',
           hover: 'var(--color-secondary-hover)',
+          light: 'var(--color-secondary-light)',
         },
         hover: {
           light: 'var(--color-hover-light)',
